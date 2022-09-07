@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+:root{
+    --primary-color: #252241;
+    --text-color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    height: 100vh;
+}
+
+/* START HEADER SECTION  */
+.info-bars{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px 0;
+}
+
+.row.items .phones, .row.items .emails{
+    position: relative;
+}
+
+.row.items .phones::after, .row.items .emails::after{
+    content: '';
+    width: 2px;
+    height: 100%;
+    padding: 35px 0;
+    background-color: #777;
+
+    position: absolute;
+    top: -15px;
+    right: -5px;
+}
+
+@media (max-width: 1200px) {
+    .info-bars{
+        flex-wrap: wrap;
+    }
+
+    .hides-icons{
+        display: none;
+    }
+}
+
+/* END HEADER SECTION  */
+
+.solo-texts .t-infos p:nth-child(1){
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 19px;
+    margin: 0;
+}
+
+.solo-texts .t-infos p:nth-child(2){
+    color: #999;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+    .hides-solos{
+        display: none;
+    }
+}

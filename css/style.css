@@ -635,8 +635,12 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+
+    position: relative;
 }
 /* END CALLBACK SECTION  */
+
+/* START BLOG SECTION  */
 .blogs{
     background-color: var(--primary-color);
     color: #fff;
@@ -682,4 +686,73 @@ body{
         width: 500px;
     }
 }
-/* START BLOG SECTION  */
+
+/* END BLOG SECTION  */
+
+/* START TESTIMONAL SECTION  */
+
+.carousel{
+    position: relative;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    /* background-color: red; */
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+}
+
+.carousel-control-prev{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+
+.carousel-control-next{
+    position: absolute;
+    top: 70%;
+    right: 30%;
+}
+
+.forms-groups{
+    position: relative;
+    height: 50vh;
+}
+
+
+.forms{
+    background-color: var(--primary-color);
+    color: white;
+
+    position: absolute;
+    top: -100%;
+    right: 0;
+}
+
+@media (max-width:1200px) {
+    .forms-groups{
+        height: 25vh;
+    }
+
+    .forms{
+        top: -63%;
+        right: 0%;
+    }
+}
+
+/* @media (max-width:1200px) {
+    .forms-groups{
+        height: 35vh;
+    }
+
+    .forms{
+        top: 0%;
+        right: 0%;
+    }
+} */
+
+/* END TESTIMONAL SECTION  */

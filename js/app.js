@@ -154,8 +154,6 @@ const filters = document.querySelectorAll('.filter');
 const leftbtn = document.getElementById('left');
 const rightbtn = document.getElementById('right');
 
-console.log(filters.length);
-
 viewbtns.forEach((viewbtn,idx)=>{
     viewbtn.addEventListener('click',()=>{
        imageviews.style.display = 'block';

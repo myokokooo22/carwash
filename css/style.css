@@ -720,7 +720,8 @@ body{
 
 .forms-groups{
     position: relative;
-    height: 50vh;
+    background-color: transparent;
+    height: 28vh;
 }
 
 
@@ -734,12 +735,13 @@ body{
 }
 
 @media (max-width:1200px) {
-    .forms-groups{
+    /* .forms-groups{
         height: 25vh;
-    }
+    } */
 
     .forms{
-        top: -63%;
+        margin: 20px 0;
+        top: 0%;
         right: 0%;
     }
 }

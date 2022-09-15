@@ -1,3 +1,17 @@
+// START FLOAT ICON 
+const floaticon = document.getElementById('float-icons');
+
+ window.addEventListener('scroll',()=>{
+    if(window.scrollY > 100){
+        floaticon.style,display = 'block';
+    }else{
+        floaticon.style.display = 'none';
+    }
+ });
+
+// console.log(window.scrollY); 
+// END FLOAT ICON 
+
 // START PROJECT SECTION 
 // Start Project Nav Section 
 const pjlists = document.querySelectorAll('.pjlists');
@@ -196,3 +210,9 @@ window.onclick = (e)=>{
 }
 //End Popup Slider Section
 //END PROJECT SECTION
+
+// START FOOTER SECTION 
+const fyear = document.getElementById('fyears');
+const date = new Date().getUTCFullYear();
+fyear.textContent = date;
+// END FOOTER SECTION 

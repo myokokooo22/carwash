@@ -39,6 +39,63 @@ body{
     right: -5px;
 }
 
+.hides-icons{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.searchs{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: -150%;
+    left: 0;
+
+    z-index: 999;
+    margin: 0;
+    overflow-y: hidden;
+
+    transition: top 0.4s ease;
+}
+
+.searchs.active{
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.search-boxs{
+    width: 300px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.search-boxs:focus{
+    outline: 0;
+}
+
+.searchbtn{
+    background-color: transparent;
+    border: 0;
+    padding: 10px;
+    color: #fff;
+}
+
+.search-boxs::placeholder{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.close-btn-search{
+    cursor: pointer;
+}
+
 @media (max-width: 1200px) {
     .hides-icons{
         display: none;
@@ -113,7 +170,6 @@ body{
 
 .btns:hover{
     background-color: var(--primary-color);
-    color: white;
 }
 
 .navs{
@@ -127,7 +183,49 @@ body{
     color: var(--secondary-color);
 }
 
+.navbars.active{
+    background-color: var(--primary-color);
+}
+
+.navs.active{
+    color: white;
+}
 /* End Navbar Section  */
+
+/* Start Slider section */
+.sliders{
+    height: 100%;
+    width: 600px;
+    background-color: var(--primary-color);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+    display: none;
+}
+
+.sliders ul{
+    margin: auto;
+    text-align: center;
+}
+
+.sliders ul li a{
+    font-size: 30px;
+    padding: 30px 0;
+    color: #fff;
+}
+.sliders ul li{
+    border-bottom: 1px solid #fff;
+}
+
+.sliders ul li:last-child{
+    border-bottom: 0px solid #fff;
+}
+
+
+/* End Slider Section  */
 
 /* Stat Banner Section  */
 .banners{
@@ -749,6 +847,11 @@ body{
     justify-content: space-around;
     align-items: center;
     margin: 20px 0;
+}
+
+.icons i{
+    color: white;
+    font-size: 36px;
 }
 
 .contacticons{

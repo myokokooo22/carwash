@@ -1,16 +1,60 @@
-// START FLOAT ICON 
-const floaticon = document.getElementById('float-icons');
+// START FLOAT ICON AND NAVBAR EFFECT
+const floaticon = document.querySelector('.float-icons');
+const navbar = document.querySelector('.navbars');
+const navitems = document.querySelectorAll('.navs');
 
- window.addEventListener('scroll',()=>{
-    if(window.scrollY > 100){
-        floaticon.style,display = 'block';
+function navadd(){
+    navitems.forEach((navitem)=>{
+        navitem.classList.add('active');
+    });
+}
+
+function navremove(){
+    navitems.forEach((navitem)=>{
+        navitem.classList.remove('active');
+    });
+}
+
+window.addEventListener('scroll',()=>{
+    const getscrolly = window.scrollY;
+    // console.log(getscrolly);
+
+    if(getscrolly > 350){
+        floaticon.style.display='block';
+        navbar.classList.add('navbar-dark','fixed-top','active');
+        navadd();
+       
     }else{
         floaticon.style.display = 'none';
+        navbar.classList.remove('navbar-dark','fixed-top','active');
+        navremove();
     }
- });
+});
 
 // console.log(window.scrollY); 
-// END FLOAT ICON 
+// END FLOAT ICON AND NAVBAR EFFECT
+
+//START SLIDER SECION
+const slider = document.querySelector('.sliders');
+const navbarbtn = document.getElementById('navbar-btn').addEventListener('click',()=>{
+    slider.classList.toggle('d-md-block');
+});
+
+const closebtn = document.querySelector('.close-btn').addEventListener('click',()=>{
+    slider.classList.remove('d-md-block');
+});
+//END SLIDER SECTION
+
+// START SEARCH 
+const search = document.querySelector('.searchs');
+const searchicons = document.getElementById('search-icon').addEventListener('click',()=>{
+    search.classList.add('active');
+});
+
+const closebtnsearch = document.querySelector('.close-btn-search').addEventListener('click',()=>{
+    search.classList.remove('active');
+});
+// END SEARCH 
 
 // START PROJECT SECTION 
 // Start Project Nav Section 

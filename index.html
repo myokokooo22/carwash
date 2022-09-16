@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-    
+<head> 
     <title>Car Wash</title>
     <!--fontawesome css1-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,12 +30,23 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-1 hides-icons">
+                        <div id="search-icon" class="col-lg-1 hides-icons">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
                 </div>
             <!--END INFO BAR-->
+
+                <!--Start Search-->
+            <div class="container-fluid searchs">
+                <div class="close-btn-search m-3"><i class="fa-solid fa-xmark fa-4x text-light"></i></div>
+
+              <div class="d-flex justify-content-center align-items-center">
+                <input type="text" name="search" id="search" class="search-boxs" placeholder="Search"/>
+                <button type="submit" id="searchbtn" class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+                <!--End Search-->
 
             <!--Start Logo Section-->
                <section class="logos">
@@ -47,7 +57,7 @@
                         </div>
 
                        <div class="col-lg-1 col-sm-1 d-lg-none d-md-flex">
-                        <button type="button" class="btn">
+                        <button type="button" id="navbar-btn" class="btn">
                            <div class="bars bars1"></div>
                            <div class="bars bars2"></div>
                            <div class="bars bars3"></div>
@@ -83,8 +93,22 @@
                 
             <!--End Logo Section-->
 
+            <!--START SLIDER SECTION-->
+               <div class="d-lg-none fixed sliders">
+                <div class="close-btn m-3"><i class="fa-solid fa-xmark fa-4x text-light"></i></div>
+                <ul class="list-unstyled">
+                    <li class="mx-3"><a href="#" class="nav-link navs">Home</a></li>
+                    <li class="mx-3"><a href="#" class="nav-link navs">About</a></li>
+                    <li class="mx-3"><a href="#" class="nav-link navs">Serives</a></li>
+                    <li class="mx-3"><a href="#" class="nav-link navs">Blog</a></li>
+                    <li class="mx-3"><a href="#" class="nav-link navs">Contact</a></li>
+                    <li class="mx-3 mt-5"><a href="#" class="nav-link navs"> <a href="#" class="mx-4 btns">Book Apointment</a></a></li>
+                </ul>
+               </div>
+            <!--END SLIDER SECTION-->
+
             <!--Start Navbar Section-->
-                <nav class="navbar navbar-expand-md justify-content-around">
+                <nav class="navbar navbar-expand-md justify-content-around navbars">
                     <div class="mx-2 d-md-none d-sm-none d-lg-flex">
                         <ul class="navbar-nav">
                             <li class="nav-item mx-3"><a href="#" class="nav-link navs">Home</a></li>
@@ -815,7 +839,7 @@
                         <div class="infosectons text-center">
                             <div class="boxes">
                                 <div class="icons">
-                                    <i class="fa-regular fa-envelope"></i>
+                                    <i class="fa-solid fa-location-dot"></i>
                                 </div>
                                 <div class="infos text-white">
                                     <h5 class="fw-bold">Our Office Location</h5>

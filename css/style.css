@@ -135,7 +135,9 @@ body{
 
 @media (max-width: 1200px) {
     .logos{
+        width: 100%;
         padding: 40px;
+        background-color: #fff;
     }
 
     .hides-solos{
@@ -151,6 +153,19 @@ body{
     .brand-imgs{
         width: 400px;
     }
+
+    .logos.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        z-index: 99;
+    }
+    
+    .btn .bars{
+        top: 0;
+        right: 0;
+    }
 }
 /* Ene Logo Section  */
 
@@ -159,7 +174,7 @@ body{
     background-color: var(--secondary-color);
     color: white;
     text-decoration: none;
-    padding: 20px;
+    padding: 20px 25px;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;

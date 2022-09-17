@@ -3,6 +3,8 @@ const floaticon = document.querySelector('.float-icons');
 const navbar = document.querySelector('.navbars');
 const navitems = document.querySelectorAll('.navs');
 
+const logobar = document.querySelector('.logos');
+
 function navadd(){
     navitems.forEach((navitem)=>{
         navitem.classList.add('active');
@@ -29,6 +31,12 @@ window.addEventListener('scroll',()=>{
         navbar.classList.remove('navbar-dark','fixed-top','active');
         navremove();
     }
+
+    if(getscrolly > 400){
+        logobar.classList.add('active');
+    }else{
+        logobar.classList.remove('active');
+    }  
 });
 
 // console.log(window.scrollY); 
